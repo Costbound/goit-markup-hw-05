@@ -336,50 +336,6 @@
                 </ul>
             </div>
         </section>
-        <section class="section-backdrop">
-            <h2 class="visually-hidden">Callback form</h2>
-                <div class="backdrop-modal-container">
-                    <button class="modal-close-btn" type="button">
-                        <svg width="8" height="8">
-                            <use href="./images/icons.svg#icon-close"></use>
-                        </svg>
-                    </button>
-                    <form class="modal-form">Leave your contacts and we will call you back
-                        <label class="modal-label">Name
-                            <input type="text" class="modal-input" name="name">
-                            <svg class="modal-input-icon" width="18px" height="18px">
-                                <use href="./images/icons.svg#icon-person"></use>
-                            </svg>
-                        </label>
-                        <label class="modal-label">Phone
-                            <input type="tel" class="modal-input" name="phone">
-                            <svg class="modal-input-icon" width="18px" height="18px">
-                                <use href="./images/icons.svg#icon-phone"></use>
-                            </svg>
-                        </label>
-                        <label class="modal-label">Email
-                            <input type="email" class="modal-input" name="email">
-                            <svg class="modal-input-icon" width="18px" height="18px">
-                                <use href="./images/icons.svg#icon-email"></use>
-                            </svg>
-                        </label>
-                        <label  class="modal-label">Comment
-                            <textarea class="modal-textarea" placeholder="Text input" name="comment"></textarea>
-                        </label>
-                        <div class="modal-checkbox-container">
-                            <div class="modal-checkbox-icon-container">
-                                <input type="checkbox" class="modal-checkbox visually-hidden" name="policy" value="accept" id="terms">
-                                <svg class="modal-checkbox-icon" width="16" height="16">
-                                    <use href="./images/icons.svg#icon-checkbox"></use>
-                                </svg>
-                            </div>               
-                            <label for="terms" class="modal-checkbox-lable">I accept the terms and conditions of the <a class="modal-policy-link" href="">Privacy Policy</a></label>
-                        </div>
-                        <button type="submit" class="button modal-btn">Send</button>
-                    </form>
-                </div>
-        </section>
-
     </main>
 
     <footer class="footer">
@@ -422,16 +378,61 @@
                 </ul>
             </div>
             <div class="footer-subscribe-container">
-                <label class="footer-subscribe-label">Subscribe
-                    <input class="footer-subscribe-input" type="email" name="email" placeholder="E-mail">
-                </label>
-                <button class="footer-subscribe-btn button" type="submit">Subscribe
-                    <svg class="footer-subscribe-icon" width="24" height="24">
-                        <use href="./images/icons.svg#icon-send"></use>
-                    </svg>
-                </button>
+                <p class="footer-subscribe-para">Subscribe</p>
+                <form class="footer-form">
+                    <label class="footer-subscribe-label">
+                        <input class="footer-subscribe-input" type="email" name="email" placeholder="E-mail">
+                    </label>
+                    <button class="footer-subscribe-btn button" type="submit">Subscribe
+                        <svg class="footer-subscribe-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
+    <div class="backdrop-container is-open">
+        <div class="backdrop-modal-container">
+            <button class="modal-close-btn" type="button">
+                <svg width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <form class="modal-form">Leave your contacts and we will call you back
+                <label class="modal-label">Name
+                    <input type="text" class="modal-input" name="name">
+                    <svg class="modal-input-icon" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                </label>
+                <label class="modal-label">Phone
+                    <input type="tel" class="modal-input" name="phone">
+                    <svg class="modal-input-icon" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </label>
+                <label class="modal-label">Email
+                    <input type="email" class="modal-input" name="email">
+                    <svg class="modal-input-icon" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                </label>
+                <label  class="modal-label">Comment
+                    <textarea class="modal-textarea" placeholder="Text input" name="comment"></textarea>
+                </label>
+                <div class="modal-checkbox-container">
+                    <div class="modal-checkbox-icon-container">
+                        <input type="checkbox" class="modal-checkbox visually-hidden" name="policy" value="accept" id="terms">
+                        <svg class="modal-checkbox-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-checkbox"></use>
+                        </svg>
+                    </div>               
+                    <label for="terms" class="modal-checkbox-lable">I accept the terms and conditions of the <a class="modal-policy-link" href="">Privacy Policy</a></label>
+                </div>
+                <button type="submit" class="button modal-btn">Send</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
